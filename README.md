@@ -23,7 +23,6 @@ python3 -m pip install --user ply
 A partir da raiz do projeto:
 
 ```
-mkdir -p output
 PYTHONPATH=src python3 -m compilador --mode vm Testes/text/hello.txt     -o output/hello.vm
 PYTHONPATH=src python3 -m compilador --mode vm Testes/text/fatorial.txt  -o output/fatorial.vm
 PYTHONPATH=src python3 -m compilador --mode vm Testes/text/primo.txt     -o output/primo.vm
@@ -47,5 +46,5 @@ O `--mode` aceita ainda `lex` (tokens), `parse` (AST) e `sem` (análise semânti
 A partir da raiz do projeto:
 
 ```
-python3 -m unittest discover -s Testes/scripts_py -v
+python3 -m unittest discover -s Testes/py -v
 ```
