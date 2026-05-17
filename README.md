@@ -24,11 +24,11 @@ A partir da raiz do projeto:
 
 ```
 mkdir -p output
-PYTHONPATH=src python3 -m fortran77_compiler --mode vm Testes/stores/hello.txt     -o output/hello.vm
-PYTHONPATH=src python3 -m fortran77_compiler --mode vm Testes/stores/fatorial.txt  -o output/fatorial.vm
-PYTHONPATH=src python3 -m fortran77_compiler --mode vm Testes/stores/primo.txt     -o output/primo.vm
-PYTHONPATH=src python3 -m fortran77_compiler --mode vm Testes/stores/somaarr.txt   -o output/somaarr.vm
-PYTHONPATH=src python3 -m fortran77_compiler --mode vm Testes/stores/conversao.txt -o output/conversao.vm
+PYTHONPATH=src python3 -m compilador --mode vm Testes/text/hello.txt     -o output/hello.vm
+PYTHONPATH=src python3 -m compilador --mode vm Testes/text/fatorial.txt  -o output/fatorial.vm
+PYTHONPATH=src python3 -m compilador --mode vm Testes/text/primo.txt     -o output/primo.vm
+PYTHONPATH=src python3 -m compilador --mode vm Testes/text/somaarr.txt   -o output/somaarr.vm
+PYTHONPATH=src python3 -m compilador --mode vm Testes/text/conversao.txt -o output/conversao.vm
 ```
 
 O `--mode` aceita ainda `lex` (tokens), `parse` (AST) e `sem` (análise semântica),
