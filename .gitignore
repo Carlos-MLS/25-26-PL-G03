@@ -1,20 +1,27 @@
+# Bytecode e caches do Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
+
+# Tabelas geradas pelo PLY
+parser.out
+parsetab.py
+
+# Ambientes virtuais
 .venv/
 venv/
-.env
-.pytest_cache/
-.mypy_cache/
-build/
-dist/
-*.egg-info/
-report/*.aux
-report/*.log
-report/*.out
-report/*.toc
-report/*.fls
-report/*.fdb_latexmk
-report/.texmf-var/
-report/missfont.log
+env/
+
+# Artefactos de compilação do relatório LaTeX
+relatorio/*.aux
+relatorio/*.log
+relatorio/*.out
+relatorio/*.toc
+relatorio/*.synctex.gz
+relatorio/*.fls
+relatorio/*.fdb_latexmk
+
+# Ficheiros de sistema / editor
+.DS_Store
+.vscode/
+.idea/
