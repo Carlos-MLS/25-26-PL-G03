@@ -15,7 +15,7 @@ SRC = ROOT / "src"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
-from fortran77_compiler.compiler import compile_source_to_vm
+from compilador.compiler import compile_source_to_vm
 
 
 class KnownLimitationsTests(unittest.TestCase):

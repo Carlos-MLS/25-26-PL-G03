@@ -12,8 +12,8 @@ SRC = ROOT / "src"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
-from fortran77_compiler.parser import FortranParser, ParseError
-from fortran77_compiler.semantics import SemanticAnalyzer, SemanticError
+from compilador.parser import FortranParser, ParseError
+from compilador.semantics import SemanticAnalyzer, SemanticError
 
 
 class ParserSemanticsTests(unittest.TestCase):

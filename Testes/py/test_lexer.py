@@ -12,7 +12,7 @@ SRC = ROOT / "src"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
-from fortran77_compiler.lexer import FortranLexer, LexicalError, tokenize
+from compilador.lexer import FortranLexer, LexicalError, tokenize
 
 
 class LexerTests(unittest.TestCase):

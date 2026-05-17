@@ -13,7 +13,7 @@ SRC = ROOT / "src"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
-from fortran77_compiler.compiler import compile_file_to_vm, compile_source_to_vm
+from compilador.compiler import compile_file_to_vm, compile_source_to_vm
 
 
 class CodegenPipelineTests(unittest.TestCase):
@@ -34,8 +34,8 @@ class CodegenPipelineTests(unittest.TestCase):
         )
 
     def test_programas_exemplo_compilam(self) -> None:
-        exemplos = sorted((ROOT / "Testes" / "stores").glob("*.txt"))
-        self.assertGreaterEqual(len(exemplos), 4, "Esperavam-se vários programas de exemplo em Testes/stores/.")
+        exemplos = sorted((ROOT / "Testes" / "text").glob("*.txt"))
+        self.assertGreaterEqual(len(exemplos), 4, "Esperavam-se vários programas de exemplo em Testes/text/.")
         for ficheiro in exemplos:
             with self.subTest(ficheiro=ficheiro.name):
                 vm = compile_source_to_vm(ficheiro.read_text(encoding="utf-8"))
